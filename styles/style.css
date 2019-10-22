@@ -1,7 +1,7 @@
 *  {
     box-sizing: border-box;
 }
-.body {
+.wrapper {
     width: 320px;
     margin: 0;
 }
@@ -15,9 +15,11 @@
 .header{
     background-color: #FFFFFF;
     width: 100%;
+    position: fixed;
     display: flex;
     flex-direction: column;
     text-align: center;
+    color: #4a4a4a;
 }
 .adalab-logo {
     width: 155px;
@@ -32,6 +34,11 @@
     flex-direction: row;
     justify-content: space-evenly;
     color: #4a4a4a;
+    margin-bottom: 13px;
+    font-size: 16px;
+}
+.nav-text {
+    word-spacing: 20px;
 }
 
 /*MAIN*/
@@ -52,4 +59,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 30px;
+}
+
+@media all and (min-width:768px) {
+    .header {
+        text-align: left;
+        background-color: #FFFFFF;
+        position: fixed;
+    }
+    .adalab-logo {
+        margin-left: 30px;
+        width: 155px;
+    }
+    .nav-text {
+        font-size: 16px;
+        text-align: end;
+    }
+    .main-tittle {
+        font-size: 40px;
+    }
+    
 }

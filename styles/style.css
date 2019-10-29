@@ -1,86 +1,75 @@
 *  {
     box-sizing: border-box;
-}
-.wrapper {
-    width: 320px;
-    margin: 0;
+    margin:0;
+    padding:0;
+    font-family: 'Rubik', arial, sans-serif;
+    font-size:1 rem;
 }
 
-.wrapper {
-    width: 100%;
-    height: 100%;
-    font-family: 'Rubik', sans-serif;
+a {
+    text-decoration: none;
 }
-/*HEADER*/
+a:hover {
+    color: #3cdbc0;
+}
+
+/*---HEADER---*/
 .header{
-    background-color: #FFFFFF;
-    width: 100%;
     position: fixed;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: #4a4a4a;
-}
-.adalab-logo {
-    width: 155px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-
-}
-.nav {
-    width: 155px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: #4a4a4a;
-    margin-bottom: 13px;
-    font-size: 16px;
-}
-.nav-text {
-    margin-right: 20px;
-}
-
-/*MAIN*/
-.main {
+    align-items: center; 
     width: 100%;
+}
+.header__logo{
+    width: 155px;
+    margin:10px;
+}
+.nav__item {
+    display: inline;
+}
+
+.nav__link {
+    display: inline-block;
+    color: #4a4a4a;
+    padding: 10px 10px 13px 10px;
+    text-transform: uppercase;
+}
+
+/*---MAIN---*/
+.main{
+    background-color: #3cdbc0;
+    color: #fff;
     height: 100vh;
-    background-color: #3CDBC0;
-    color: #FFFFFF;
-    font-family:'Rubik', sans-serif;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-.main-tittle {
+.main__title{
+    font-size: 1.87 rem;
+    text-transform: capitalize;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
 }
 
 @media all and (min-width:768px) {
-    .header {
-        text-align: left;
-        background-color: #FFFFFF;
-        position: fixed;
-    }
-    .adalab-logo {
-        margin-left: 30px;
-        width: 155px;
-        text-align: left;
-    }
-    .nav-text {
-        font-size: 16px;
-        text-align: end;
-    }
-    .main-tittle {
-        font-size: 40px;
-    }
-    
+   .header{
+        padding: 20px 30px 20px 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+   }
+   .header__logo{
+       margin: 0;
+   }
+   .main {
+       font-size: 2.5 rem;
+   }
 }
+
+
